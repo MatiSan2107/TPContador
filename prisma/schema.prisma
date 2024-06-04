@@ -4,8 +4,8 @@ generator client {
 
 datasource db {
   provider  = "postgresql"
-  url       = env("postgres://postgres.tbxveygwvogjhxohkctf:trabajopractico2107@aws-0-us-west-1.pooler.supabase.com:6543/postgres?pgbouncer=true")
-  directUrl = env("postgres://postgres.tbxveygwvogjhxohkctf:trabajopractico2107@aws-0-us-west-1.pooler.supabase.com:5432/postgres")
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
 }
 
 /// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
